@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency Landing Page</title>
+    <!-- <link rel="stylesheet" href="CSS/style.css"> -->
+    <link type="text/css" rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="#">Wapki</a>
+            <div class="menu">
+                <div class="dropdown">
+                    <div class="drop-down">
+                        <h4 class="dropbtn" id="language" onclick="togle()">English</h4>
+                        <i class="fa-sharp fa-solid fa-caret-down" id="downIcon" onclick="togleOn()"></i>
+                        <i class="fa-sharp fa-solid fa-caret-up" onclick="togleOff()" id="upIcon"></i>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="links english" href="#" id="english" onclick="translateToEnglish()">English</a>
+                        <a class="links" href="#" id="bengali" onclick="translateToBengali()">Bengali</a>
+                        <a class="links" href="#" id="hindi" onclick="translateToHindi()">Hindi</a>
+                        <a class="links" href="#" id="urdu" onclick="translateToUrdu()">Urdu</a>
+                        <a class="links" href="#" id="spanish" onclick="translateToSpanish()">Spanish</a>
+                    </div>
+                </div>
+                <div class="menu-bar-nav">
+                    <div class="menu-icons">
+                        <img id="menuBarIcon" class="menu-bar-icon" onclick="menuBarOpen()" src="SVG/Menu.svg"
+                            alt="Menu bar">
+                        <img id="menuBarIcon2" class="menu-bar-icon-2" onclick="menuBarClose()" src="SVG/Menu 2.svg"
+                            alt="Menu bar">
+                    </div>
+                    <div class="menu-bar" id="menuBar">
+                        <div id="menu-bar">
+                            <a href="#">Home</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Our Services</a>
+                            <a href="#">Pricing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>We Help You To Build Your Creativity</h1>
+                <p>Programming is a skill best acquired by practice and example rather then from books.</p>
+                <a href="register.html" target="_blank" class="btn">Get Started</a>
+            </div>
+            <img src="SVG/OBJECTS.svg" alt="Vector Object" class="vectors">
+        </div>
+    </header>
+
+    <section id="service-section">
+        <h1>Our Services</h1>
+        <div class="services">
+            <div class="business-planning">
+                <img src="SVG/undraw_science_fqhl_1.svg" alt="Science">
+                <h3>Business Planing</h3>
+                <p>Voice and data system arecrucual to the success or failure of most yor business</p>
+            </div>
+            <div class="startup-planing">
+                <img src="SVG/undraw_plans_y8ru_1.svg" alt="Plans">
+                <h3>Startup Planing</h3>
+                <p>Voice and data system arecrucual to the success or failure of most yor business</p>
+            </div>
+            <div class="digital-thinking">
+                <img src="SVG/undraw_media_player_ylg8_1.svg" alt="Media Player">
+                <h3>Digital Thinking</h3>
+                <p>Voice and data system arecrucual to the success or failure of most yor business</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="never-miss">
+        <div class="shapes-texts">
+            <img src="SVG/Shape.svg" alt="Shapes">
+            <div class="texts">
+                <h3>Build Your Own Business!</h3>
+                <p>Build your business with WAPKi. We will help you to build your business and make it success</p>
+                <a href="#">Set Timer</a>
+            </div>
+        </div>
+        <div class="images">
+            <img src="SVG/21722471.svg" alt="Business Build">
+        </div>
+    </section>
+
+    <section class="all-knowledge">
+        <div class="images">
+            <img src="SVG/all-knowledge.svg" alt="Business Build">
+        </div>
+        <div class="shapes-texts">
+            <img src="SVG/circles.svg" alt="Circle">
+            <div class="texts">
+                <h3>All The Knowledge !</h3>
+                <p>The more that you read, the more things you will know, the more that you learn, the more places
+                    you'll go.</p>
+                <a href="#">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="texts-agent">
+            <h3>More then 1M People Like Us</h3>
+            <p>“Employees who report receiving recognition and praise within the last seven days show increased
+                productivity, get higher scores from customers, and have better safety records. They're just more
+                engaged at work.”</p>
+            <img src="SVG/agent.svg" alt="Business Agent Pic">
+            <h4>David Smith</h4>
+            <h5>Business Agent</h5>
+        </div>
+        <div class="image-agent">
+            <img src="SVG/feedback.svg" alt="Agents">
+        </div>
+    </section>
+
+    <div class="news-feed-body">
+        <section class="news-feed">
+            <div class="texts-feed">
+                <h2>Our News Feed</h2>
+                <p>Build your business with WAPKi. We will help you to build your business and make it sucess</p>
+            </div>
+            <div class="feed-section">
+                <div class="slides">
+                    <div class="feed slide">
+                        <div class="img-sec">
+                            <img src="SVG/undraw_preferences_popup_wbfw_1.svg" alt="Person">
+                        </div>
+                        <div class="text-sec">
+                            <p>4 July 2020</p>
+                            <h2>Artificial intiligent have been commonplace in a way</h2>
+                            <div class="news-person">
+                                <img src="SVG/Ellipse-30.svg" alt="Person">
+                                <h4>By Selena Gomz</h4>
+                                <div class="love-sec">
+                                    <img src="SVG/Path.svg" alt="Love">
+                                    <p>34</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed slide">
+                        <div class="img-sec">
+                            <img src="SVG/undraw_business_decisions_gjwy_1.svg" alt="Person">
+                        </div>
+                        <div class="text-sec">
+                            <p>4 July 2020</p>
+                            <h2>Artificial intiligent have been commonplace in a way</h2>
+                            <div class="news-person">
+                                <img src="SVG/Ellipse-30.svg" alt="Person">
+                                <h4>By Selena Gomz</h4>
+                                <div class="love-sec">
+                                    <img src="SVG/Path.svg" alt="Love">
+                                    <p>32</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed slide">
+                        <div class="img-sec">
+                            <img src="SVG/undraw_personal_email_t7nw_1.svg" alt="Person">
+                        </div>
+                        <div class="text-sec">
+                            <p>3 July 2020</p>
+                            <h2>Business is growing down until i meet them</h2>
+                            <div class="news-person">
+                                <img src="SVG/Ellipse-40.svg" alt="Person">
+                                <h4>By Adom Shafi</h4>
+                                <div class="love-sec">
+                                    <img src="SVG/Path.svg" alt="Love">
+                                    <p>12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed slide">
+                        <div class="img-sec">
+                            <img src="SVG/undraw_profile_details_f8b_1.svg" alt="Person">
+                        </div>
+                        <div class="text-sec">
+                            <p>2 July 2020</p>
+                            <h2>They are awsome help you to grow</h2>
+                            <div class="news-person">
+                                <img src="SVG/Ellipse-50.svg" alt="Person">
+                                <h4>By Alan Walker</h4>
+                                <div class="love-sec">
+                                    <img src="SVG/Path.svg" alt="Love">
+                                    <p>44</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed slide">
+                        <div class="img-sec">
+                            <img src="SVG/undraw_dropdown_menu_vv9j_1.svg" alt="Person">
+                        </div>
+                        <div class="text-sec">
+                            <p>1 July 2020</p>
+                            <h2>I never meet any agency like them!</h2>
+                            <div class="news-person">
+                                <img src="SVG/Ellipse-30.svg" alt="Person">
+                                <h4>By Selena Gomz</h4>
+                                <div class="love-sec">
+                                    <img src="SVG/Path.svg" alt="Love">
+                                    <p>65</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed slide">
+                        <div class="img-sec">
+                            <img src="SVG/undraw_business_decisions_gjwy_1.svg" alt="Person">
+                        </div>
+                        <div class="text-sec">
+                            <p>4 July 2020</p>
+                            <h2>Artificial intiligent have been commonplace in a way</h2>
+                            <div class="news-person">
+                                <img src="SVG/Ellipse-30.svg" alt="Person">
+                                <h4>By Selena Gomz</h4>
+                                <div class="love-sec">
+                                    <img src="SVG/Path.svg" alt="Love">
+                                    <p>32</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="slider-dots"></div>
+                <img src="SVG/Left.svg" class="arrow-1"></img>
+                <img src="SVG/Right.svg" class="arrow-2"></img> -->
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer-section">
+        <div class="footer-div">
+            <div class="footer-texts">
+                <h2>Get In Touch With Us</h2>
+                <p>Do you have any questions?</p>
+            </div>
+            <form class="inputs" action="#">
+                <div class="Name">
+                    <label class="label" for="name">Name</label>
+                    <input type="text" id="name" onclick="name_click()">
+                </div>
+                <div class="Email">
+                    <label class="label" for="email">Email</label>
+                    <input type="email" id="email" onclick="email_click()">
+                </div>
+                <div class="Message">
+                    <label class="label" for="message">Message</label>
+                    <textarea name="Message" placeholder="Write Your Messsage" id="message" cols="20" rows="3"
+                        onclick="message_click()"></textarea>
+                </div>
+                <div class="custom-btn"><a href="#">SEND</a></div>
+            </form>
+        </div>
+        <div class="last-section">
+            <div class="footer">
+                <div class="footer-text">
+                    <a href="#" class="logo last-logo">WAPKI</a>
+                    <div class="footer-nav">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="social-copy">
+                    <div class="copy">
+                        <p>@ All right reserved 2020</p>
+                        <p>Designed By Adom Shafi</p>
+                        <p>Developed By Rakib Rahat</p>
+                    </div>
+                    <div class="social">
+                        <p>FOLLOW US</p>
+                        <div class="social-img">
+                            <a href="https://www.google.com/" target="_blank"><img src="SVG/Drive.svg" alt="Google Drive"></a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="SVG/Instagram.svg" alt="Meta Instagram"></a>
+                            <a href="https://twitter.com" target="_blank"><img src="SVG/Twitter.svg" alt="Twitter"></a>
+                            <a href="https://www.facebook.com" target="_blank"><img src="SVG/Facebook.svg" alt="Meta Facebook"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- JavScript Files -->
+<script src="JS/javascript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+</script>
+
+</html>
