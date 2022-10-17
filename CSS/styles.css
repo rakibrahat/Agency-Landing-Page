@@ -1239,6 +1239,43 @@ nav {
 
 
 
+@media (max-width: 420px){
+    .social {
+        flex-flow: column wrap;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .social>p {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .social-img {
+        width: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 750px){
+    .social-copy {
+        flex-flow: column wrap;
+    }
+
+    .copy {
+        align-items: center;
+    }
+
+    .copy>p {
+        text-align: center;
+    }
+}
+
+
 @media (max-width:800px) {
     .menu-bar-icon {
         display: inline-block;
